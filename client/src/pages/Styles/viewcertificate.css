@@ -1,0 +1,153 @@
+.certificate-view {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-height: 100vh; 
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f9; 
+  margin: 0; 
+}
+
+.certificate-view h2 {
+  text-align: center;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.certificate-view h3 {
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
+  color: #333;
+  margin: 15px 0;
+}
+
+.certificate-view p {
+  font-size: clamp(0.9rem, 3vw, 1rem);
+  color: #555;
+  margin: 10px 0;
+  line-height: 1.6;
+  word-break: break-word; 
+}
+
+
+.certificate-view p strong {
+  color: #333;
+  font-weight: 600;
+}
+
+.certificate-view a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.certificate-view a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+
+.certificate-view img {
+  max-width: 100%; 
+  height: auto;
+  border-radius: 4px;
+  margin: 10px auto;
+  display: block; 
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.certificate-view button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: clamp(0.9rem, 3vw, 1rem);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin: 10px 5px;
+}
+
+.verify-blockchain-btn {
+  background-color: #800080;
+  color: white;
+}
+
+.verify-blockchain-btn:hover:not(:disabled) {
+  background-color: #e600e6;
+}
+
+.verify-blockchain-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.certificate-view button:not(.verify-blockchain-btn, .verify-result button) {
+  background-color: #0a3375; 
+  color: white;
+}
+
+.certificate-view button:not(.verify-blockchain-btn, .verify-result button):hover {
+  background-color: #0f4aa3;
+}
+
+.verify-result {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.verify-result button {
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 16px;
+}
+
+.error-message {
+  color: #dc3545;
+  text-align: center;
+  font-size: clamp(0.9rem, 3vw, 1rem);
+  margin: 20px 0;
+}
+
+@media (max-width: 600px) {
+  .certificate-view {
+    padding: 15px;
+    margin: 10px;
+    max-width: 100%; 
+  }
+
+  .certificate-view h2 {
+    font-size: clamp(1.3rem, 5vw, 1.8rem);
+  }
+
+  .certificate-view p {
+    font-size: clamp(0.85rem, 3vw, 0.95rem);
+  }
+
+  .certificate-view img {
+    max-width: 80%;
+  }
+
+  .certificate-view button {
+    width: 100%; 
+    padding: 12px;
+    margin: 8px 0;
+  }
+
+  .verify-result {
+    padding: 10px;
+  }
+}
+
+.certificate-view p a,
+.certificate-view p span {
+  word-break: break-all;
+}

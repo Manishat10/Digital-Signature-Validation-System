@@ -1,0 +1,162 @@
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto; 
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  
+  .signup-page-bg {
+    background-color: #dfdfec; 
+    min-height: 100vh; 
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 90px;
+    box-sizing: border-box;
+  }
+  
+  .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px; 
+    min-width: 400px;
+  }
+  
+  .signup-box {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    position: relative;
+  }
+  
+  h2 {
+    margin-bottom: 1.5rem;
+    color: #333; 
+  }
+  
+  .input-group {
+    margin-bottom: 1.2rem; 
+    text-align: left;
+  }
+  
+  .input-group label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .login-btn {
+    background: #0a3375;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8rem 1.2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+  }
+  .camera-btn,.retake-btn{
+    background: #0a3375;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    
+    cursor: pointer;
+    
+    width:50%;
+  }
+  
+  .login-btn:hover,.camera-btn:hover,.retake-btn:hover {
+    background: #0f4aa3;
+  }
+  
+  /* Camera Modal */
+  .camera-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .camera-container {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .webcam {
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+  }
+  
+  .camera-controls {
+    margin-top: 10px;
+  }
+  
+  .capture-btn,
+  .close-btn {
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .capture-btn {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .close-btn {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  /* Photo Preview */
+  .photo-preview img {
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  

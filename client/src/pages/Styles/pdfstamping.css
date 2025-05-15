@@ -1,0 +1,139 @@
+
+.pdf-stamping {
+    max-width: 600px; 
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    min-height: 100vh; 
+    box-sizing: border-box;
+    text-align: center; 
+  }
+  
+  body {
+    background-color: #737373; 
+    margin: 0;
+  }
+  
+  /* Headings */
+  .pdf-stamping h2 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+
+  .pdf-stamping p {
+    font-size: clamp(0.9rem, 3vw, 1rem);
+    color: #555;
+    margin: 15px 0;
+    line-height: 1.6;
+  }
+  
+
+  .pdf-stamping p strong {
+    color: #333;
+    font-weight: 600;
+  }
+  
+  /* QR code image */
+  .pdf-stamping img {
+    max-width: 100px; 
+    height: auto;
+    border-radius: 4px;
+    margin: 10px auto;
+    display: block;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+
+  .pdf-stamping form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+
+  .pdf-stamping label {
+    font-size: clamp(0.9rem, 3vw, 1rem);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* File input */
+  .pdf-stamping input[type="file"] {
+    padding: 5px;
+    font-size: clamp(0.85rem, 3vw, 0.95rem);
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px; 
+  }
+  
+  /* Buttons */
+  .pdf-stamping button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: clamp(0.9rem, 3vw, 1rem);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .pdf-stamping button[type="submit"] {
+    background-color: #0a3375; 
+    color: white;
+  }
+  
+  .pdf-stamping button[type="submit"]:hover {
+    background-color: #0f4aa3;
+  
+  }
+  
+  /* Cancel/Go Back button */
+  .pdf-stamping button[type="button"] {
+    background-color: #0a3375; 
+    color: white;
+  }
+  
+  .pdf-stamping button[type="button"]:hover {
+    background-color: #0f4aa3;
+  
+  }
+  
+ 
+  @media (max-width: 600px) {
+    .pdf-stamping {
+      padding: 15px;
+      margin: 10px;
+      max-width: 100%; 
+    }
+  
+    .pdf-stamping h2 {
+      font-size: clamp(1.3rem, 5vw, 1.8rem);
+    }
+  
+    .pdf-stamping p {
+      font-size: clamp(0.85rem, 3vw, 0.95rem);
+    }
+  
+    .pdf-stamping img {
+      max-width: 80px; 
+    }
+  
+    .pdf-stamping input[type="file"] {
+      max-width: 100%; 
+    }
+  
+    .pdf-stamping button {
+      width: 100%; 
+      padding: 12px;
+      margin: 5px 0;
+    }
+  }

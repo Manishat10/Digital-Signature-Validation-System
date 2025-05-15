@@ -1,0 +1,135 @@
+/* General Styles for Navbar */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navbar */
+nav {
+  background-color: #1f2937; /* Dark background */
+  color: #ffffff;
+  padding: 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Logo */
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #93c5fd; /* Blue hover */
+  text-decoration: underline;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none; /* Hidden on larger screens */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.hamburger-icon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.hamburger-icon::before {
+  top: -8px;
+}
+
+.hamburger-icon::after {
+  top: 8px;
+}
+
+.hamburger-icon.open {
+  background-color: transparent; /* Hide middle line */
+}
+
+.hamburger-icon.open::before {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger-icon.open::after {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show hamburger on mobile */
+  }
+
+  .nav-links {
+    display: none; /* Hide links by default */
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    background-color: #1f2937;
+    position: absolute;
+    top: 100%; /* Below navbar */
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.open {
+    display: flex; /* Show links when open */
+  }
+
+  nav ul li {
+    padding: 0.5rem 0;
+  }
+}
+
+/* Ensure content isn’t hidden under fixed navbar */
+body {
+  padding-top: 60px; /* Adjust based on navbar height */
+}

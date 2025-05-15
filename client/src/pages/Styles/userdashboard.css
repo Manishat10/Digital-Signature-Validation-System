@@ -1,0 +1,104 @@
+.dashboard {
+  max-width: 90%;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+  background: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.dashboard h1 {
+  font-size: 2rem;
+  color: #0a3375;
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #0a3375; 
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 10px 5px;
+}
+
+button:hover {
+  background-color: #0f4aa3; 
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin: 10px 5px;
+  width: 250px;
+}
+
+.table-container {
+  width: 100%;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #0a3375; 
+  color: #fff;
+  text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tr:hover {
+  background: #f1f1f1;
+}
+
+.delete-certificate-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+      max-width: 100%;
+      padding: 15px;
+  }
+
+  input {
+      width: 100%;
+      max-width: 100%;
+  }
+
+  table {
+      font-size: 0.9rem;
+  }
+
+  button {
+      width: 100%;
+      max-width: 250px;
+  }
+}

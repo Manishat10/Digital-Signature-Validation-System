@@ -1,0 +1,14 @@
+***Installation Steps:***
+install ganache cli(: npm install -g ganache-cli
+in blockchain folder: npx truffle init
+install truffle globally: npm install -g truffle
+
+***Compilation: compile the contract after writing: truffle compile
+
+
+***Steps to run a ganache instance while taking into use:*** 
+in separate terminal type: ganache  'OR'  ganache-cli -p 8545
+in folder terminal type: truffle migrate --network development --reset
+
+
+NOTE: check the contractAddress and PrivateKey each time as it changes with  every deployment, and accordingly update it in the server directory file named config.js in the path: server/blockchain/config.js
